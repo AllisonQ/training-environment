@@ -30,3 +30,7 @@ end
 Then(/^I receive a login error$/) do
   expect(page.body).to match('Unknown User')
 end
+
+Then(/^I can complete the form with my details$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
