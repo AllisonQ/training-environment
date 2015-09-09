@@ -23,7 +23,8 @@ if (ENV['webdriver'] == 'poltergeist') then
   Capybara.register_driver :poltergeist do |app|
     Capybara::Poltergeist::Driver.new(app, inspector: true, js_errors: true)
   end
-
+  require 'test/unit'
+  include Test::Unit::Assertions
 else
 
   require 'selenium-webdriver'
