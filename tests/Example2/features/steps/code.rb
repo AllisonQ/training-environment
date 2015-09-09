@@ -1,7 +1,7 @@
 
 Given(/^I have a user account$/) do
   $data = {}
-  $data['user_name'] = 'User' + Time.new().to_i.to_s + '@example.org' # Create a random user name
+  $data['user_name'] = 'User' + Time.new().to_i.to_s + '@example.org' #Use Time.new to create a random user name
   $data['user_password'] = 'password'
 
   rest_post_call('http://localhost:4567/add_user', $data)
@@ -29,8 +29,4 @@ end
 
 Then(/^I receive a login error$/) do
   expect(page.body).to match('Unknown User')
-end
-
-Then(/^I can complete the form with my details$/) do
-  pending # Write code here that turns the phrase above into concrete actions
 end

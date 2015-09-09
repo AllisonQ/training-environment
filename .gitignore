@@ -14,3 +14,4 @@ home/log.txt
 !.jenkins_jobs/example/builds/3
 
 .jenkins_jobs/example/workspace/
+.png
