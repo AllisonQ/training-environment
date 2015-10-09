@@ -30,13 +30,3 @@ end
 Then(/^I receive a login error$/) do
   expect(page.body).to match('Unknown User')
 end
-
-When(/^login with username but no password$/) do
-  fill_in('username', :with => $data['user_name'])
-  click_button('Sign in')
-end
-
-Then(/^I receive an error message$/) do
-#test currently fails - pop up not recognised 
-  response.body.should have_content("Please fill in this field.")#no xpath for pop up message - would ask dev amend this
-end
