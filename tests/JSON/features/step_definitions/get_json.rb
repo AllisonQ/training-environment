@@ -18,9 +18,9 @@
   puts $structure_hash['edition_date'] + ' - edition_date'
   puts $structure_hash['entries'][0]['status'] + ' - status'
 
-  puts $structure_hash['entries'][7]['infills'][0]['proprietors'][0]['name']['surname'] + ' surname'
+  #puts $structure_hash['entries'][7]['infills'][0]['proprietors'][0]['name']['forename'] + ' - forename'
 
-    ### data Validation ###
+    ### selected data Validation ###
    expect($structure_hash['title_number']).to eq('GR504812')
    expect($structure_hash['tenure']).to eq('Freehold')
    expect($structure_hash['entries'][12]['entry_id']).to eq('2006-09-06 11:32:13.352265')
@@ -29,5 +29,6 @@
    expect($structure_hash['entries'][16]['sub_register']).to eq('S')
    expect($structure_hash['edition_date']).to eq('2006-09-06')
    expect($structure_hash['entries'][0]['status']).to eq('Current')
-   expect($structure_hash['entries'][7]['infills'][0]['proprietors'][0]['name']['forename']).to eq('WAYNE')
+
+   #expect($structure_hash['entries'][7]['infills'][0]['proprietors'][0]['name']['forename']).to eq('WAYNE')
   end
