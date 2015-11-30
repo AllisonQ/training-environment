@@ -26,7 +26,7 @@
    expect($structure_hash['entries'][12]['entry_id']).to eq('2006-09-06 11:32:13.352265')
    expect($structure_hash['application_reference']).to eq('E006DWW')
    expect($structure_hash['migration_errors'][0]['extractor']).to eq('Register Check')
-   expect($structure_hash['entries'][16]['sub_register']).to eq('S')LIkewise not entry no 16 but 17
+   expect($structure_hash['entries'][16]['sub_register']).to eq('S')#lIkewise not entry no 16 but 17
    expect($structure_hash['edition_date']).to eq('2006-09-06')
    expect($structure_hash['entries'][0]['status']).to eq('Current')
 
