@@ -11,7 +11,7 @@
     #This is returning the first level data
   puts $structure_hash['title_number'] + ' - title_number'
   puts $structure_hash['tenure'] + ' - tenure'
-  puts $structure_hash['entries'][12]['entry_id'] + ' - entry_id' # this is not entry no 12 but no 13
+  puts $structure_hash['entries'][12]['entry_id'] + ' - entry_id' # this is not entry no 12 but no 13 Also see the one below 
   puts $structure_hash['application_reference'] + ' - application_reference'
   puts $structure_hash['migration_errors'][0]['extractor'] + ' - extractor error'
   puts $structure_hash['entries'][16]['sub_register'] + ' - sub_register'
