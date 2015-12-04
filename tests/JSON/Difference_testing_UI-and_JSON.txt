@@ -1,0 +1,19 @@
+Differences in testing a web page and JSON
+
+ Web page testing
+
+ You do not need to test the specific path or location when testing web pages. You can use Capybara to 'assert' whatever is being tested, or use Rspec  to 'expect' to do the same. This applies to checking screen validations and verifying navigation, data integrity, object states and field formats.
+
+ When web page testing there will always be a need to undertake an element of maunal usability testing.
+
+ JSON testing
+
+ You need to know the exact path in the test code. Using an online JSON editor can be useful in determning the path.
+
+ In order to automate the tests the JSON will always need to be parsed into its component parts.
+
+ The format of JSON may become corrupted so using a JSON validator such as http://jsonlint.com/ can help to identify formatting errors.
+
+ For testing both
+
+ I would need to know the Domain from which the JSON was being retrieved and have set up the env.rb file accordingly.
