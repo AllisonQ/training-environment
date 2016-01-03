@@ -1,19 +1,21 @@
 Differences in testing a web page and JSON
 
- Web page testing
+ Web page testing (front-end)
 
- You do not need to test the specific path or location when testing web pages. You can use Capybara to 'assert' whatever is being tested, or use Rspec  to 'expect' to do the same. This applies to checking screen validations and verifying navigation, data integrity, object states and field formats.
+ As long as the developer has provided unique field ids on the web page, tests do not need a specific path or location. Testing can be undertaken using Capybara to 'assert' or Rspec 'expect'. This applies to the testing all behaviours of the web page, such as checking screen validations and verifying navigation, data integrity and field formats.
 
- When web page testing there will always be a need to undertake an element of maunal usability testing.
+ When testing a web page there will always be a need to undertake an element of maunal testing to confirm formatting and usability of the web page.
 
- JSON testing
+ JSON testing (back-end API)
 
- You need to know the exact path in the test code. Using an online JSON editor can be useful in determning the path.
+ JSON must be parsed for tests to access its component parts.
 
- In order to automate the tests the JSON will always need to be parsed into its component parts.
+ Tests need to include the exact path/location in the test code. (Using an online JSON editor can be useful in determning the path: http://www.jsoneditoronline.org/)
 
- The format of JSON may become corrupted so using a JSON validator such as http://jsonlint.com/ can help to identify formatting errors.
+ Tests may fail if the format of JSON becomes corrupted so using a JSON validator such as http://jsonlint.com/ can help to identify formatting errors.
 
- For testing both
+ Requirements from developers
 
- I would need to know the Domain from which the JSON was being retrieved and have set up the env.rb file accordingly.
+ I would need to know the URL, routes to it and what GET and POST methods exist in order to set up the env.rb file. Architecture drawings to illustrate this are always useful.
+
+ I need to know what parameters will be passed in and what is expected to be returned.
