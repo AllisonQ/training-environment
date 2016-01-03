@@ -2,13 +2,13 @@ Differences in testing a web page and JSON
 
  Web page testing (front-end)
 
- As long as the developer has provided unique field ids on the web page, tests do not need a specific path or location. Testing can be undertaken using Capybara to 'assert' or Rspec 'expect'. This applies to the testing all behaviours of the web page, such as checking screen validations and verifying navigation, data integrity and field formats.
+ As long as the developer has provided unique field ids on the web page, tests do not need a specific path or location, testing can be undertaken using Capybara to 'assert' or Rspec 'expect'. This applies to the testing all behaviours of the web page, such as checking screen validations and verifying navigation, data integrity and field formats.
 
  When testing a web page there will always be a need to undertake an element of maunal testing to confirm formatting and usability of the web page.
 
  JSON testing (back-end API)
 
- JSON must be parsed for tests to access its component parts.
+ JSON must be parsed so that tests to access its component parts.
 
  Tests need to include the exact path/location in the test code. (Using an online JSON editor can be useful in determning the path: http://www.jsoneditoronline.org/)
 
