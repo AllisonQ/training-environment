@@ -8,7 +8,7 @@ Differences in testing a web page and JSON
 
  JSON testing (back-end API)
 
- JSON must be parsed so that tests to access its component parts.
+ JSON must be parsed so that tests can access its component parts.
 
  Tests need to include the exact path/location in the test code. (Using an online JSON editor can be useful in determning the path: http://www.jsoneditoronline.org/)
 
